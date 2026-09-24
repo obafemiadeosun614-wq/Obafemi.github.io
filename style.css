@@ -7,16 +7,18 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #eee;
+    background-color: #0f172a;
 }
 
 header {
-    background-color: #1e293b;
-    color: white;
+    background-color: #111827;
+    color: #f5c518;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -24,47 +26,81 @@ header h1 {
 }
 
 nav a {
-    color: white;
+    color: #eee;
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #38bdf8;
+    color: #f5c518;
 }
 
 section {
     padding: 60px 40px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 section h2 {
-    margin-bottom: 15px;
-    color: #1e293b;
+    margin-bottom: 20px;
+    color: #f5c518;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero p {
+    margin: 15px 0;
+    color: #ccc;
 }
 
 button {
-    background-color: #38bdf8;
-    color: white;
+    background-color: #f5c518;
+    color: #111827;
     border: none;
     padding: 12px 24px;
     font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #0ea5e9;
+    background-color: #d4a90e;
 }
 
-footer {
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-card {
     background-color: #1e293b;
-    color: white;
-    text-align: center;
     padding: 20px;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    color: #f5c518;
+    margin-bottom: 10px;
 }
 
 form {
@@ -77,16 +113,19 @@ form {
 label {
     font-weight: bold;
     margin-bottom: 5px;
+    color: #ccc;
 }
 
 input,
 textarea {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 6px;
     font-size: 15px;
     font-family: inherit;
+    background-color: #1e293b;
+    color: #fff;
 }
 
 textarea {
@@ -96,11 +135,19 @@ textarea {
 
 #whatsappBtn {
     background-color: #25D366;
+    color: white;
     margin-top: 10px;
 }
 
 #whatsappBtn:hover {
     background-color: #1ebe5d;
+}
+
+footer {
+    background-color: #111827;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
 }
 
 @media (max-width: 600px) {
@@ -110,14 +157,22 @@ textarea {
     }
 
     nav a {
-        margin: 5px 10px;
-        display: inline-block;
+        margin: 5px 8px;
     }
 
     section {
         padding: 40px 20px;
     }
 
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
     form {
         max-width: 100%;
+    }
     }
