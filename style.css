@@ -175,4 +175,11 @@ footer {
     form {
         max-width: 100%;
     }
-    }
+    } 
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
