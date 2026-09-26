@@ -5,31 +5,36 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #eee;
-    background-color: #0f172a;
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.7;
+    color: #e5e7eb;
+    background-color: #0b1120;
 }
 
 header {
-    background-color: #111827;
+    background-color: #0f172a;
     color: #f5c518;
-    padding: 20px 40px;
+    padding: 22px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 header h1 {
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 nav a {
-    color: #eee;
+    color: #e5e7eb;
     text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
+    margin-left: 22px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.2s ease;
 }
 
 nav a:hover {
@@ -37,70 +42,116 @@ nav a:hover {
 }
 
 section {
-    padding: 60px 40px;
+    padding: 70px 40px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 section h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #f5c518;
+    font-weight: 700;
+    font-size: 28px;
 }
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
+    background: linear-gradient(180deg, #0b1120 0%, #131c31 100%);
+}
+
+.hero h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
 }
 
 .hero p {
     margin: 15px 0;
-    color: #ccc;
+    color: #b8c0cc;
+    font-size: 17px;
+}
+
+.cta-section {
+    text-align: center;
+    background-color: #161f36;
+    border-radius: 14px;
+    max-width: 900px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+.cta-section p {
+    color: #b8c0cc;
+    font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button {
     background-color: #f5c518;
     color: #111827;
     border: none;
-    padding: 12px 24px;
+    padding: 13px 28px;
     font-size: 16px;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     margin-top: 10px;
-    font-weight: bold;
+    font-weight: 700;
+    transition: transform 0.15s ease, background-color 0.2s ease;
 }
 
 button:hover {
     background-color: #d4a90e;
+    transform: translateY(-2px);
 }
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 18px;
 }
 
 .gallery img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 22px;
 }
 
 .service-card {
-    background-color: #1e293b;
-    padding: 20px;
-    border-radius: 8px;
+    background-color: #161f36;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
 }
 
 .service-card h3 {
     color: #f5c518;
     margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.service-card p {
+    color: #b8c0cc;
+    font-size: 15px;
 }
 
 form {
@@ -111,20 +162,21 @@ form {
 }
 
 label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #ccc;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #cbd5e1;
+    font-size: 15px;
 }
 
 input,
 textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #333;
-    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #2a3550;
+    border-radius: 8px;
     font-size: 15px;
     font-family: inherit;
-    background-color: #1e293b;
+    background-color: #161f36;
     color: #fff;
 }
 
@@ -143,11 +195,19 @@ textarea {
     background-color: #1ebe5d;
 }
 
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
 footer {
-    background-color: #111827;
-    color: #ccc;
+    background-color: #0f172a;
+    color: #9aa4b2;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    font-size: 14px;
 }
 
 @media (max-width: 600px) {
@@ -161,7 +221,7 @@ footer {
     }
 
     section {
-        padding: 40px 20px;
+        padding: 45px 20px;
     }
 
     .gallery {
@@ -175,11 +235,4 @@ footer {
     form {
         max-width: 100%;
     }
-    } 
-
-.social-links {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 15px;
 }
