@@ -8,24 +8,25 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     line-height: 1.7;
     color: #e5e7eb;
-    background-color: #0b1120;
+    background-color: #0d0d0f;
 }
 
 header {
-    background-color: #0f172a;
-    color: #f5c518;
+    background-color: #131316;
+    color: #3b82f6;
     padding: 22px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
 header h1 {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.5px;
+    color: #fff;
 }
 
 nav a {
@@ -38,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #f5c518;
+    color: #3b82f6;
 }
 
 section {
@@ -49,7 +50,7 @@ section {
 
 section h2 {
     margin-bottom: 25px;
-    color: #f5c518;
+    color: #3b82f6;
     font-weight: 700;
     font-size: 28px;
 }
@@ -57,30 +58,31 @@ section h2 {
 .hero {
     text-align: center;
     padding: 120px 20px;
-    background: linear-gradient(180deg, #0b1120 0%, #131c31 100%);
+    background: linear-gradient(180deg, #0d0d0f 0%, #18181c 100%);
 }
 
 .hero h2 {
     font-size: 34px;
     margin-bottom: 15px;
+    color: #fff;
 }
 
 .hero p {
     margin: 15px 0;
-    color: #b8c0cc;
+    color: #a0a0a8;
     font-size: 17px;
 }
 
 .cta-section {
     text-align: center;
-    background-color: #161f36;
+    background-color: #18181c;
     border-radius: 14px;
     max-width: 900px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
 }
 
 .cta-section p {
-    color: #b8c0cc;
+    color: #a0a0a8;
     font-size: 16px;
     margin-bottom: 10px;
     max-width: 600px;
@@ -89,8 +91,8 @@ section h2 {
 }
 
 button {
-    background-color: #f5c518;
-    color: #111827;
+    background-color: #3b82f6;
+    color: #fff;
     border: none;
     padding: 13px 28px;
     font-size: 16px;
@@ -102,7 +104,7 @@ button {
 }
 
 button:hover {
-    background-color: #d4a90e;
+    background-color: #2563eb;
     transform: translateY(-2px);
 }
 
@@ -117,7 +119,7 @@ button:hover {
     height: 220px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.5);
     transition: transform 0.2s ease;
 }
 
@@ -132,25 +134,27 @@ button:hover {
 }
 
 .service-card {
-    background-color: #161f36;
+    background-color: #18181c;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
     transition: transform 0.2s ease;
+    border: 1px solid #232328;
 }
 
 .service-card:hover {
     transform: translateY(-4px);
+    border-color: #3b82f6;
 }
 
 .service-card h3 {
-    color: #f5c518;
+    color: #3b82f6;
     margin-bottom: 10px;
     font-size: 19px;
 }
 
 .service-card p {
-    color: #b8c0cc;
+    color: #a0a0a8;
     font-size: 15px;
 }
 
@@ -172,12 +176,18 @@ input,
 textarea {
     padding: 12px;
     margin-bottom: 18px;
-    border: 1px solid #2a3550;
+    border: 1px solid #2a2a30;
     border-radius: 8px;
     font-size: 15px;
     font-family: inherit;
-    background-color: #161f36;
+    background-color: #18181c;
     color: #fff;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
 }
 
 textarea {
@@ -203,8 +213,8 @@ textarea {
 }
 
 footer {
-    background-color: #0f172a;
-    color: #9aa4b2;
+    background-color: #131316;
+    color: #7a7a82;
     text-align: center;
     padding: 25px;
     font-size: 14px;
